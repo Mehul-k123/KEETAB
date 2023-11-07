@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="books.css" />
+  </head>
+  <body>
+    <h1>Library Management System</h1>
+
+   
+
+    <div class="input">
+      <div class="book-form">
+        <h2>Add a New Book</h2>
+        <input type="text" id="bookName" placeholder="Book Name" />
+        <input type="text" id="category" placeholder="Category" />
+        <input type="text" id="author" placeholder="Author" />
+        <input type="url" id="bookFile" placeholder="Enter book drive url" />
+        <input type="url" id="bookImage" placeholder="Enter book imagelink" />
+        <button type="button" onclick="addBook()">Add Book</button>
+      </div>
+    </div>
+
+    <div id="book-list">
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Book Name</th>
+              <th>Category</th>
+              <th>Author</th>
+              <th>File Link</th>
+              <th>Book Image Link</th>
+              <!-- <th>Action</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Existing book entries will be displayed here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- <script src="home.js"></script> -->
+    <script src="books.js"></script>
+  </body>
+</html>

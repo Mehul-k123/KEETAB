@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.115.4">
+    <link rel="shortcut icon" href="IIITU logo.png" type="image/x-icon">
+    <title>KEETAB</title>
+    
+    
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/"> -->
+
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
+</head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+<link href="home.css" rel="stylesheet">
+<link href="carousel.css" rel="stylesheet">
+</head>
+
+<body >
+    <!-- <div class="container"> -->
+        <header 
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 mb-4 border-bottom">
+        
+        <h1>KEETAB</h1>
+           
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">Academics</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">PYQs</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">Higher Studies</a></li>
+                <li class="nav-item"><a href="faq2.html"  class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="about2.html" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end" id="button-container">
+              <button type="button" class="btn btn-success" id="loginButton"  onclick="login()">Login</button>
+              <button type="button" class="btn btn-primary" id="registerButton" onclick="register()">Sign-up</button>
+              <button type="button" class="btn btn-danger" id="logoutButton" onclick="logout()">Logout</button>
+          </div>          
+        </header>
+        <main>
+
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <!-- <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button> -->
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="ing"preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" />
+                  <image href="../images/4.jpg" alt="" width="100%">
+                </svg>
+                <div class="container">
+                  
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                  <image  href="../images/near counter.jpg" alt="" width="100%"></svg>
+                <div class="container">
+                  
+                </div>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+
+            <div class="container col-xxl-10 px-2 py-1">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-9 col-lg-6">
+                        <img src="library.jpg" class="d-block mx-lg-auto img-fluid" alt="IIITU library"
+                            width="600" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A suggestive learning application for IITU students</h2>
+                        <p class="lead">"Welcome to our online library! KEETAB (Knowledge Everywhere EveryTime And Beyond) Our digital platform offers around-the-clock access to a vast and diverse collection of digital resources, including e-books, and previous year question papers. You'll benefit from user-friendly search features, real-time content updates, and interactive tools that enhance your research and learning experience. By going digital, we reduce costs, preserve resources, and ensure global accessibility. Our secure and scalable system also provides valuable data insights to continually improve our services. Explore, learn, and collaborate with ease through our online library."</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="container px-4 py-2" id="hanging-icons">
+                <h2 class="pb-2 border-bottom">Features</h2>
+                <hr>
+                <div class="row g-2 py-2 row-cols-1 row-cols-lg-3">
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      
+                    </div>
+                    <div>
+                      <h3 class="fs-2 text-body-emphasis">Academic Books</h3>
+                      <p>This refers to textbooks and reference materials that cover various engineering disciplines, scientific principles, and technical subjects. These books are essential resources for students and faculty in engineering programs. </p>
+                      <a href="primary_login.html" class="btn btn-primary">
+                        Click Here
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                      
+                    </div>
+                    <div>
+                      <h3 class="fs-2 text-body-emphasis">PYQs</h3>
+                      <p>This refers to previous year question papers that serve as valuable study resources for upcoming students. They provide insight into the format, types of questions, and topics covered in exams, helping students prepare effectively.</p>
+                      <a href="primary_login.html" class="btn btn-primary">
+                        Click Here
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                     
+                    </div>
+                    <div>
+                      <h3 class="fs-2 text-body-emphasis">Higher Studies</h3>
+                      <p >This refers to advanced academic programs beyond undergraduate degrees, such as master's and doctoral programs.These programs focus on specialized areas of engineering and provide in-depth knowledge, research opportunities, and advanced skills development.
+
+                      </p>
+                      <a href="primary_login.html" class="btn btn-primary">
+                        Click Here
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </main>
+    
+          <!-- <div class="container"> -->
+            <footer class="d-flex flex-wrap justify-content-between align-items-center px-5 py-3  border-top">
+              <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 KEETAB</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">Academics</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">PYQs</a></li>
+                <li class="nav-item"><a href="primary_login.html" class="nav-link px-2 text-body-secondary">Higher Studies</a></li>
+                <li class="nav-item"><a href="faq2.html"  class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="about2.html" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+          
+              <div class="icons">
+                  <a href="https://www.facebook.com/iiituna.ac.in/" target="_blank">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                  <a href="https://instagram.com/iiit.una_?igshid=MzRlODBiNWFlZA==" target="_blank">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fiiituna" target="_blank">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                  <a href="https://in.linkedin.com/school/iiituna/" target="_blank">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                  <a href="https://www.iiitu.ac.in/" target="_blank">
+                    <ion-icon name="logo-google"></ion-icon>
+                </a>
+            
+              </div>
+              
+            </footer>
+          <!-- </div> -->
+    
+    <!-- </div> -->
+<script src="home.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

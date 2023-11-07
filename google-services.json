@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730917202371",
+    "project_id": "e-sales-5662e",
+    "storage_bucket": "e-sales-5662e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730917202371:android:9a7cd1fc2a4bfd2255b576",
+        "android_client_info": {
+          "package_name": "com.deveric.esales"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSilB-3pznXgCI9tUaWjS8GntL72Utg7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

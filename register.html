@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="shortcut icon" href="IIITU logo.png" type="image/x-icon">
+    <title>Student Registration</title>
+</head>
+<body>
+    <div class="background-image">
+        <div class="login-container">
+            <h1>Student Registration</h1>
+            <div>
+                <form class="login-form" id="registration-form">
+                    <label for="firstname">Full Name:</label>
+                    <input type="text" id="firstname" name="name" required>
+
+                    <label for="DOB">DOB:</label>
+                    <input type="date" name="dob" id="DOB" required>
+
+                    <label for="mygender">Gender:</label>
+                    <input type="radio" name="gender" value="Male" required> Male
+                    <input type="radio" name="gender" value="Female" required> Female
+                    <input type="radio" name="gender" value="Other" required> Other
+
+                    <label for="instituename">Institute Name:</label>
+                    <input type="text" id="instituename" name="Iname" required>
+
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" id="studentid" name="SID" required>
+
+                    <label for="educationalrole">Educational role:</label>
+                    <select id="educationalrole" name="Erole" required>
+                        <option value="">Select role</option>
+                        <option value="UG">UG</option>
+                        <option value="PG">PG</option>
+                        <option value="PHD">PHD</option>
+                    </select>
+
+                    <label for="year">Year of Enrollment:</label>
+                    <input type="number" id="year" name="yearOfEnroll" min="2000" max="2099" required>
+
+                    <label for="department">Department:</label>
+                    <select id="department" name="dept" required>
+                        <option value="">Select Department</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Others">Others</option>
+                    </select>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="cpassword" required>
+                    <p id="password-mismatch-message" style="color: red; display: none;">Passwords do not match</p>
+
+                    <label for="mobile-number">Mobile-number:</label>
+                    <input type="tel" id="mobile-number" name="phone" required>
+
+                    <button type="button" onclick="registerUser()">Register</button>
+                    <button type="reset" >Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+
+</body>
+</html>
+
+
